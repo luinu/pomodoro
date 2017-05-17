@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pomodoro Technique timer</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://use.fontawesome.com/c4a6633287.js"></script>
+    <script src="scripts/timer.js"></script>
+</head>
+
+<body>
+    <div id="timer">
+        <button type="button" name="start" id="start" onclick="startCount()"><i class="fa fa-play" aria-hidden="true"></i>
+</button>
+        <button type="button" name="pause" id="pause" onclick="pauseTimer()"><i class="fa fa-pause" aria-hidden="true"></i>
+</button>
+        <button type="button" name="stop" id="stop" onclick="stopTimer()"><i class="fa fa-stop" aria-hidden="true"></i>
+</button>
+        <br><br>
+        <div id="sessionTime">
+          Session time: <br>
+          <button type="button" name="add" class="add" onclick="addTime()"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+          <br>
+          <span id="minutesOfWork"></span>
+          <br>
+          <button type="button" name="add" class="substract" onclick="substractTime()"><i class="fa fa-minus" aria-hidden="true"></i>
+</button>
+        </div>
+        <div id="breakTime">
+          Break time:<br>
+          <button type="button" name="add" class="add" onclick="addBreak()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <br>
+          <span id="minutesOfBreak"></span>
+          <br>
+          <button type="button" name="add" class="substract" onclick="substractBreak()"><i class="fa fa-minus" aria-hidden="true"></i>
+</button>
+        </div>
+        <br><br>
+          <div id="pomodoro"></div>
+    </div>
+</body>
+
+</html>
